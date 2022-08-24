@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/miller/hw1-Miller11k'
+gcc -std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror -o sort main.c sort.c
+make: Leaving directory '/home/miller/hw1-Miller11k'
+ 

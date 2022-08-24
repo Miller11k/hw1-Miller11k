@@ -1,7 +1,7 @@
 GCC=gcc
 CFLAGS=-std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror
 EXEC = sort
-TESTFLAGS = -DASCENDING
+TESTFLAGS = -DASCENDING -ASCENDING
 
 all: main.c sort.c
 	$(GCC) $(CFLAGS) -o $(EXEC) main.c sort.c

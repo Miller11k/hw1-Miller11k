@@ -1,14 +1,14 @@
 GCC=gcc
 CFLAGS=-std=c99 -g -Wall -Wshadow --pedantic -Wvla -Werror
 EXEC = sort
-TESTFLAGS = -DASCENDING -ASCENDING
+TESTFLAGS = -DASCENDING
 
 all: main.c sort.c
 	$(GCC) $(CFLAGS) -o $(EXEC) main.c sort.c
 	
 # Fix the gcc command for the target ascending by fill in the missing part
 ascending: main.c sort.c
-	$(GCC) $(CFLAGS) $(ASCENDING)  -o $(EXEC) main.c sort.c
+	$(GCC) $(CFLAGS) $(TESTFLAGS)  -o $(EXEC) main.c sort.c
 	
 test: all
 	./$(EXEC) testcases/inp1

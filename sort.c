@@ -20,6 +20,7 @@ void ssort(int * arr, int size) {
 			}
 		}
 	}
+	return;
 }
 	#endif
 
@@ -41,6 +42,14 @@ void ssort(int * arr, int size) {
 				arr[j] = temp;
 			}
 		}
+		return;
 	}
 	#endif
+
+#ifndef
+void ssort(int * arr, int size) 
+{
+	printf("\n Invalid Option.\n");
+	return;
+}
 }
